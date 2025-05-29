@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788" systemVersion="24F74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="KategorilerModel" representedClassName="KategorilerModel" syncable="YES" codeGenerationType="class">
+        <attribute name="kategori_ad" optional="YES" attributeType="String"/>
+        <relationship name="kitaplar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KitaplarModel" inverseName="kategori" inverseEntity="KitaplarModel"/>
+    </entity>
+    <entity name="KitaplarModel" representedClassName="KitaplarModel" syncable="YES" codeGenerationType="class">
+        <attribute name="kitap_ad" optional="YES" attributeType="String"/>
+        <attribute name="kitap_resim" optional="YES" attributeType="String"/>
+        <attribute name="kitap_sayfa" optional="YES" attributeType="String"/>
+        <attribute name="kitap_yazar" optional="YES" attributeType="String"/>
+        <relationship name="kategori" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KategorilerModel" inverseName="kitaplar" inverseEntity="KategorilerModel"/>
+    </entity>
+</model>
