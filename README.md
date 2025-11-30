@@ -1,1 +1,1 @@
-Books app with using Swift and CoreData
+Books app with using Swift and CoreData.
